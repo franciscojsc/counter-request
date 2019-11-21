@@ -1,9 +1,15 @@
-var http = require("http");
+const express = require("express");
+const app = express();
+const path = require("path");
 
-//create a server object:
-http
-  .createServer(function(req, res) {
-    res.write("Hello World!"); //write a response to the client
-    res.end(); //end the response
-  })
-  .listen(8080); //the server object listens on port 8080
+app.set("view engine", "ejs");
+app.set("views", path.resolve(__dirname, "views"));
+
+const counter = { value: 0 };
+
+app.get("/", (req, res) => {
+  counter.value++;
+  res.render("home", { counter });
+});
+
+app.listen(8080);

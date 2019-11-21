@@ -6,10 +6,16 @@
   "scripts": {
     "start": "nodemon src/index.js localhost 8080"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ejs": "2.7.4",
+    "express": "4.17.1"
+  },
   "devDependencies": {
     "nodemon": "1.18.4"
   },
   "author": "Francisco Chaves",
-  "keywords": ["contador", "nome do host"]
+  "keywords": [
+    "contador",
+    "nome do host"
+  ]
 }
