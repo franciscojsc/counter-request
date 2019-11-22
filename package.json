@@ -4,7 +4,8 @@
   "description": "A cada requisição incrementar o valor do número em +1",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js localhost 8080"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
     "ejs": "2.7.4",
