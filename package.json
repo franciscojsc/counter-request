@@ -14,8 +14,6 @@
     "nodemon": "1.18.4"
   },
   "author": "Francisco Chaves",
-  "keywords": [
-    "contador",
-    "nome do host"
-  ]
+  "keywords": ["contador", "nome do host"],
+  "license": "MIT"
 }
